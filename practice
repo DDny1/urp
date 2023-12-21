@@ -1,0 +1,10 @@
+###############################
+### Chipyard Installation ###
+###############################
+git clone https://github.com/ucb-bar/chipyard.git # cloning remote repository to the local
+cd chipyard # move to the git repository
+git checkout 1.10.0 # change the project to the latest stable version
+./build-setup.sh riscv-tools # build dependencies and RISC-V toolchains
+source ./env.sh
+conda env list
+conda info
